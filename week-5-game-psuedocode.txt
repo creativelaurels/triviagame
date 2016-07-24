@@ -1,1 +1,27 @@
 TRIVIA GAME PSEUDOCODE
+
+
+Page Load
+	> message.. Time for some trivia, kids...
+
+
+Start Button
+	> on click it will triggerthe function  startGame()
+	> it will trigger function timer() to start
+		> 30 second count down
+		> display countdown on screen
+
+StartGame
+	> accesses question one [0] in the object of questions
+		> displays the question
+		> displays the options of answers
+
+		> if user press on correct answer
+			> ++ correct answers
+			> go to next question in object
+		> else (user selects wrong answer)
+			> ++ wrong answer
+			> go to next  in object
+		> if timer == 0 seconds left
+			> ++ wrong answer
+			> go to next question
